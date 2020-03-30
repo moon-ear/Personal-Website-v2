@@ -1,0 +1,52 @@
+.title {
+    font-family: 'Merriweather', serif;
+}
+
+h1 {
+    font-size: 4em !important;
+}
+
+h2 {
+    font-family: 'Montserrat', serif;
+    font-weight: 700;
+}
+
+.navi {
+    font-family: 'Merriweather', serif !important;
+    font-weight: 300;
+}
+
+.test {
+    background-color: red;
+}
+
+.mt-1 {
+    margin-top: 1em !important;
+}
+
+.mt-2 {
+    margin-top: 1em !important;
+}
+
+.mt-3 {
+    margin-top: 3em !important;
+}
+
+.mt-5 {
+     margin-top: 7em !important;
+}
+
+p {
+    line-height: 1.8em !important;
+    font-weight: 300;
+    /* font-family: 'Montserrat', serif; */
+}
+
+b {
+    font-weight: 500;
+}
+
+.caption {
+    font-size: 0.8em;
+    color: rgb(85, 85, 85);
+}
