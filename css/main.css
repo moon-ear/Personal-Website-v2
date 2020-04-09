@@ -46,6 +46,12 @@ b {
     font-weight: 500;
 }
 
+.shadow {
+    -webkit-box-shadow: 7px 3px 19px -6px rgba(0,0,0,0.68);
+    -moz-box-shadow: 7px 3px 19px -6px rgba(0,0,0,0.68);
+    box-shadow: 7px 3px 19px -6px rgba(0,0,0,0.68);
+}
+
 .caption {
     font-size: 0.8em;
     color: rgb(85, 85, 85);
