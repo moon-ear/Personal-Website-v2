@@ -11,13 +11,65 @@ h2 {
     font-weight: 700;
 }
 
+body {
+    background-color: #F3F3F0;
+}
+
+/* Main Page Screen Size Changes */
+
+@media only screen and (max-width: 768px) {
+    #mynav {
+      /* background-color: rgb(199, 75, 199) !important; */
+      margin-top: 1rem !important;
+    }
+    #mynav ul {
+      text-align: center !important;
+    }
+    #mynav li {
+        display: inline;
+        padding: 0px 1.5rem !important;
+    }
+    #mymain {
+        margin-top: 4rem !important;
+        padding: 0px 1.9rem;
+        /* background-color: hotpink !important; */
+    }
+}
+
+#mynav {
+    margin-top: 15rem;
+    padding-left: 5vw;
+    font-family: 'Merriweather', serif !important;
+    font-weight: 700;
+}
+
+#mynav a {
+    text-decoration: none !important;
+    color: #212529;
+}
+
+#mynav a:hover {
+    color: #101213;
+    text-decoration: underline !important;
+  }
+
+#mynav li {
+    padding: 0.2rem 0px;
+}
+
+/* Article Page Navigation */
 .navi {
     font-family: 'Merriweather', serif !important;
     font-weight: 300;
 }
 
+/* Container testing */
 .test {
-    background-color: red;
+    /* background-color: red; */
+}
+
+.test2 {
+    /* background-color: green; */
 }
 
 .mt-1 {

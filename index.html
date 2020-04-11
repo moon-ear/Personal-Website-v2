@@ -9,16 +9,22 @@
   <meta name="author" content="">
 
   <title>Bare - Start Bootstrap Template</title>
+  <!-- Imported fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Merriweather:300,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet"> 
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link href="css/main.css" rel="stylesheet">
 
 </head>
 
 <body>
 
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+  <!-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
     <div class="container">
       <a class="navbar-brand" href="#">Start Bootstrap</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -43,13 +49,21 @@
         </ul>
       </div>
     </div>
-  </nav>
+  </nav> -->
 
   <!-- Page Content -->
-  <div class="container">
+  <div class="container-fluid">
     <div class="row">
-      <div class="col-lg-12 text-center">
-        <h1 class="mt-5">A Bootstrap 4 Starter Template</h1>
+      <div class="col-md-2 test" id="mynav">
+        <ul class="list-unstyled text-left">
+          <a href=""><li>Work</li></a>
+          <a href=""><li>About Me</li></a>
+          <a href=""><li>Contact</li></a>
+        </ul>
+      </div>
+
+      <div class="col-md-10 text-center mt-5 test2" id="mymain">
+        <h1 class="title">Munir</h1>
         <p class="lead">Complete with pre-defined file paths and responsive navigation!</p>
         <ul class="list-unstyled">
           <li>Bootstrap 4.3.1</li>
