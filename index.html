@@ -11,10 +11,14 @@
   <title>Bare - Start Bootstrap Template</title>
   <!-- Imported fonts-->
   <link href="https://fonts.googleapis.com/css?family=Merriweather:300,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet"> 
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Animate -->
+  <link href="animate.min.css" rel="stylesheet">
 
   <!-- Custom CSS -->
   <link href="css/main.css" rel="stylesheet">
@@ -54,21 +58,78 @@
   <!-- Page Content -->
   <div class="container-fluid">
     <div class="row">
-      <div class="col-md-2 test" id="mynav">
-        <ul class="list-unstyled text-left">
-          <a href=""><li>Work</li></a>
-          <a href=""><li>About Me</li></a>
-          <a href=""><li>Contact</li></a>
-        </ul>
+      
+      <div class="col-md-2 animated fadeIn" id="mynav">
+        <div>
+          <ul class="list-unstyled text-left">
+            <a href=""><li>Work</li></a>
+            <a href=""><li>About Me</li></a>
+            <a href=""><li>Contact</li></a>
+          </ul>
+       </div>
       </div>
 
-      <div class="col-md-10 text-center mt-5 test2" id="mymain">
-        <h1 class="title">Munir</h1>
-        <p class="lead">Complete with pre-defined file paths and responsive navigation!</p>
-        <ul class="list-unstyled">
-          <li>Bootstrap 4.3.1</li>
-          <li>jQuery 3.4.1</li>
-        </ul>
+      <div class="col-md-9" id="allcontent">
+        
+        <div class="container">
+          <div class="row">
+
+            <div class="col-lg-6" id="bio">
+              <h1 class="animated fadeIn" id="ImMunir">Hey, I'm Munir</h1>
+              <h2 class="animated fadeIn mt-1" id="occupation">Software Engineer & Designer</h2>
+              <p class="animated fadeIn mt-2" id="blurb">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Phasellus ac vulputate tortor. Aliquam vel pretium eros, ut rutrum leo.
+                Phasellus id commodo ante. Ut vel risus tincidunt, porta erat sed, ornare velit.
+                Sed diam est, volutpat vitae venenatis nec, sodales ac enim. Nulla luctus ex nec egestas molestie.
+                Etiam sed arcu ipsum.
+              </p>
+            </div>
+
+            <div class="col-lg-6 animated fadeIn text-center my-auto" id="picDiv">
+              <video width="400" class="rounded" autoplay muted loop id="pic">
+                <source src="./img/try2comp.mp4" type="video/mp4">
+                Your browser does not support HTML5 video.
+              </video>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="container mt-5 animated fadeInUp" id="work-tiles">
+
+            <div class="row">
+              <div class="col-lg-4">
+                <h3 style="margin: 0px;">UI/UX DESIGN</h3>
+                <h2 style="font-weight: 600">uOttaHack</h2>
+                <p class="mt-2">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Nam dignissim tortor ac ultrices tincidunt. Vivamus turpis diam, feugiat ac congue sit amet,
+                  convallis pharetra diam. Vivamus risus diam, eleifend tempor porta nec, porta ac odio.
+                </p>
+              </div>
+
+              <div class="col-lg-5 offset-md-1 rounded shadow tile" id="sesa"></div>
+
+            </div>
+
+            <div class="row" style="margin-top: 8rem; margin-bottom: 6rem;">
+              <div class="col-lg-4">
+                <h3 style="margin: 0px;">UI/UX DESIGN</h3>
+                <h2 style="font-weight: 600">uOttaHack</h2>
+                <p class="mt-2">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Nam dignissim tortor ac ultrices tincidunt. Vivamus turpis diam, feugiat ac congue sit amet,
+                  convallis pharetra diam. Vivamus risus diam, eleifend tempor porta nec, porta ac odio.
+                </p>
+              </div>
+
+              <div class="col-lg-5 offset-md-1 rounded shadow">
+                <p>yoyo</p>
+              </div>
+            </div>
+
+        </div>
       </div>
     </div>
   </div>
@@ -76,6 +137,9 @@
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.slim.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.getElementById('vid').play();
+</script>
 
 </body>
 

@@ -1,46 +1,73 @@
-.title {
-    font-family: 'Merriweather', serif;
-}
-
 h1 {
     font-size: 4em !important;
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
 }
 
 h2 {
-    font-family: 'Montserrat', serif;
-    font-weight: 700;
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    font-size: 1.8rem;
+}
+
+h3 {
+    font-size: 0.8rem;
+    line-height: 1.8em !important;
+    font-weight: 400;
 }
 
 body {
     background-color: #F3F3F0;
 }
 
-/* Main Page Screen Size Changes */
+/* Main Page Screen Size Changes, LG */
+
+@media only screen and (max-width: 991px) {
+    #mainvid {
+        margin-top: 3rem;
+    }
+}
+
+
+/* Main Page Screen Size Changes, MD */
 
 @media only screen and (max-width: 768px) {
     #mynav {
       /* background-color: rgb(199, 75, 199) !important; */
       margin-top: 1rem !important;
     }
+    #mynav div {
+      position: static !important;
+    }
     #mynav ul {
       text-align: center !important;
     }
     #mynav li {
         display: inline;
-        padding: 0px 1.5rem !important;
+        padding: 0px 4vw !important;
     }
-    #mymain {
+    
+    #allcontent {
         margin-top: 4rem !important;
-        padding: 0px 1.9rem;
+        /* padding: 0px 1.9rem; */
         /* background-color: hotpink !important; */
+    }
+    #bio {
+        padding-right: 0px !important;
     }
 }
 
 #mynav {
-    margin-top: 15rem;
+    animation-delay: 1.2s;
+    margin-top: 14rem;
     padding-left: 5vw;
     font-family: 'Merriweather', serif !important;
     font-weight: 700;
+    position: relative;
+}
+
+#mynav div {
+    position: fixed;
 }
 
 #mynav a {
@@ -57,6 +84,50 @@ body {
     padding: 0.2rem 0px;
 }
 
+#allcontent {
+    margin-top: 14rem;
+}
+
+#ImMunir {
+    animation-delay: 0s;
+}
+
+#occupation {
+    animation-delay: 0.2s;
+}
+
+#blurb {
+    animation-delay: 0.3s;
+}
+
+#picDiv {
+    animation-delay: 0.5s;
+}
+
+#pic {
+    -webkit-box-shadow: 6px 6px 11px -4px rgba(0,0,0,0.54);
+    -moz-box-shadow: 6px 6px 11px -4px rgba(0,0,0,0.54);
+    box-shadow: 6px 6px 11px -4px rgba(0,0,0,0.54);
+} 
+
+#work-tiles {
+    animation-delay: 1.2s;
+}
+
+.rounded {
+    border-radius: 12px !important;
+}
+
+.tile {
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+}
+
+#sesa {
+    background-image: url(https://i.imgur.com/APGz8jq.jpg);
+}
+
 /* Article Page Navigation */
 .navi {
     font-family: 'Merriweather', serif !important;
@@ -65,11 +136,11 @@ body {
 
 /* Container testing */
 .test {
-    /* background-color: red; */
+    background-color: red;
 }
 
 .test2 {
-    /* background-color: green; */
+    background-color: green;
 }
 
 .mt-1 {
@@ -91,6 +162,7 @@ body {
 p {
     line-height: 1.8em !important;
     font-weight: 300;
+    color: #484848;
     /* font-family: 'Montserrat', serif; */
 }
 
