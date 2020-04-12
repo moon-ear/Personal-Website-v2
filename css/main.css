@@ -33,25 +33,29 @@ body {
 
 @media only screen and (max-width: 768px) {
     #mynav {
-      /* background-color: rgb(199, 75, 199) !important; */
-      margin-top: 1rem !important;
+        /* background-color: rgb(199, 75, 199) !important; */
+        margin-top: 1rem !important;
     }
+
     #mynav div {
-      position: static !important;
+        position: static !important;
     }
+
     #mynav ul {
-      text-align: center !important;
+        text-align: center !important;
     }
+
     #mynav li {
         display: inline;
         padding: 0px 4vw !important;
     }
-    
+
     #allcontent {
         margin-top: 4rem !important;
         /* padding: 0px 1.9rem; */
         /* background-color: hotpink !important; */
     }
+
     #bio {
         padding-right: 0px !important;
     }
@@ -59,7 +63,8 @@ body {
 
 #mynav {
     animation-delay: 1.2s;
-    margin-top: 14rem;
+    padding-top: 100px;
+    /* margin-top: 100rem !important; */
     padding-left: 5vw;
     font-family: 'Merriweather', serif !important;
     font-weight: 700;
@@ -78,7 +83,7 @@ body {
 #mynav a:hover {
     color: #101213;
     text-decoration: underline !important;
-  }
+}
 
 #mynav li {
     padding: 0.2rem 0px;
@@ -104,18 +109,37 @@ body {
     animation-delay: 0.5s;
 }
 
+#github {
+    fill: black;
+    transition: 0.1s;
+}
+
+#github:hover {
+    fill: white;
+}
+
+.svg-wrapper {
+    transition: 0.5s;
+    max-width: 50px;
+    padding: 3px;
+}
+
+.svg-wrapper:hover {
+    background-color: black;
+}
+
 #pic {
-    -webkit-box-shadow: 6px 6px 11px -4px rgba(0,0,0,0.54);
-    -moz-box-shadow: 6px 6px 11px -4px rgba(0,0,0,0.54);
-    box-shadow: 6px 6px 11px -4px rgba(0,0,0,0.54);
-} 
+    -webkit-box-shadow: 6px 6px 11px -4px rgba(0, 0, 0, 0.54);
+    -moz-box-shadow: 6px 6px 11px -4px rgba(0, 0, 0, 0.54);
+    box-shadow: 6px 6px 11px -4px rgba(0, 0, 0, 0.54);
+}
 
 #work-tiles {
     animation-delay: 1.2s;
 }
 
 .rounded {
-    border-radius: 12px !important;
+    border-radius: 5% !important;
 }
 
 .tile {
@@ -148,7 +172,7 @@ body {
 }
 
 .mt-2 {
-    margin-top: 1em !important;
+    margin-top: 1.5em !important;
 }
 
 .mt-3 {
@@ -156,7 +180,7 @@ body {
 }
 
 .mt-5 {
-     margin-top: 7em !important;
+    margin-top: 7em !important;
 }
 
 p {
@@ -171,9 +195,9 @@ b {
 }
 
 .shadow {
-    -webkit-box-shadow: 7px 3px 19px -6px rgba(0,0,0,0.68);
-    -moz-box-shadow: 7px 3px 19px -6px rgba(0,0,0,0.68);
-    box-shadow: 7px 3px 19px -6px rgba(0,0,0,0.68);
+    -webkit-box-shadow: 7px 3px 19px -6px rgba(0, 0, 0, 0.68);
+    -moz-box-shadow: 7px 3px 19px -6px rgba(0, 0, 0, 0.68);
+    box-shadow: 7px 3px 19px -6px rgba(0, 0, 0, 0.68);
 }
 
 .caption {
