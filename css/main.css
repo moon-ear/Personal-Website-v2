@@ -64,7 +64,7 @@ body {
 #mynav {
     animation-delay: 1.2s;
     padding-top: 100px;
-    /* margin-top: 100rem !important; */
+    margin-top: 22vh !important;
     padding-left: 5vw;
     font-family: 'Merriweather', serif !important;
     font-weight: 700;
@@ -109,23 +109,23 @@ body {
     animation-delay: 0.5s;
 }
 
-#github {
-    fill: black;
-    transition: 0.1s;
+.contact-logo {
+    fill: #565656;
+    transition: 0.05s;
 }
 
-#github:hover {
+.contact-logo:hover {
     fill: white;
 }
 
 .svg-wrapper {
     transition: 0.5s;
-    max-width: 50px;
-    padding: 3px;
+    max-width: 45px;
+    padding: 6px;
 }
 
 .svg-wrapper:hover {
-    background-color: black;
+    background-color: #565656;
 }
 
 #pic {
@@ -186,7 +186,7 @@ body {
 p {
     line-height: 1.8em !important;
     font-weight: 300;
-    color: #484848;
+    color: #565656;
     /* font-family: 'Montserrat', serif; */
 }
 
