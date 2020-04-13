@@ -151,18 +151,19 @@ body {
     transition: 0.05s;
 }
 
-.contact-logo:hover {
-    fill: white;
-}
-
 .svg-wrapper {
     transition: 0.5s;
+    min-width: 45px;
     max-width: 45px;
     padding: 6px;
 }
 
 .svg-wrapper:hover {
     background-color: #565656;
+}
+
+.svg-wrapper:hover .contact-logo {
+    fill: white;
 }
 
 #pic {
