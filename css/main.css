@@ -81,7 +81,7 @@ body {
 
 @media only screen and (max-width: 768px) {
     #work-tiles .col-lg-4 {
-        padding: 0px 20px !important;
+        padding: 0px 10px !important;
     }
 
     #work-tiles .col-lg-5 {
