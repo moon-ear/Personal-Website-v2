@@ -17,8 +17,11 @@
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-  <!-- Animate -->
+  <!-- Animate CSS -->
   <link href="animate.min.css" rel="stylesheet">
+
+  <!-- Animate on Scroll -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
   <!-- Custom CSS -->
   <link href="css/main.css" rel="stylesheet">
@@ -55,8 +58,8 @@
             <!-- Blurb -->
             <div class="col-lg-6" id="bio">
               <h1 class="animated fadeIn" id="ImMunir">Hey, I'm Munir</h1>
-              <h2 class="animated fadeIn mt-1" id="occupation">Software Engineer & Designer</h2>
-              <p class="animated fadeIn mt-2" id="blurb">
+              <h2 class="animated fadeIn mt-1 pr-2" id="occupation">Software Engineer & Designer</h2>
+              <p class="animated fadeIn mt-2 pr-3" id="blurb">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Phasellus ac vulputate tortor. Aliquam vel pretium eros, ut rutrum leo.
                 Phasellus id commodo ante. Ut vel risus tincidunt, porta erat sed, ornare velit.
@@ -66,8 +69,9 @@
 
               <!-- Contact Buttons -->
               <div class="row ml-1 mt-2 animated fadeIn" id="contact-wrapper">
+                <!-- LinkedIn button -->
                 <div class="svg-wrapper rounded col-sm-2">
-                  <a href="">
+                  <a href="https://www.linkedin.com/in/munir-aljawahari/" target="_blank">
                     <svg version="1.1" class="contact-logo" xmlns="http://www.w3.org/2000/svg"
                       xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 200 200"
                       style="enable-background:new 0 0 200 200;" xml:space="preserve">
@@ -85,8 +89,9 @@
                     </svg>
                   </a>
                 </div>
+                <!-- Github Button -->
                 <div class="svg-wrapper rounded col-sm-2 ml-3">
-                  <a href="">
+                  <a href="https://github.com/aMoonEar" target="_blank">
                     <svg version="1.1" class="contact-logo" xmlns="http://www.w3.org/2000/svg"
                       xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 200 200"
                       style="enable-background:new 0 0 200 200;" xml:space="preserve">
@@ -132,9 +137,9 @@
         </div>
 
         <!-- Work Showcase -->
-        <div class="container mt-5 animated fadeInUp" id="work-tiles">
+        <div class="container mt-5" id="work-tiles">
 
-          <div class="row">
+          <div class="row" data-aos="fade-up" data-aos-delay="800" data-aos-duration="800">
             <div class="col-lg-4">
               <h3 style="margin: 0px;">UI/UX DESIGN</h3>
               <h2 style="font-weight: 600">uOttaHack</h2>
@@ -145,11 +150,11 @@
               </p>
             </div>
 
-            <div class="col-lg-5 offset-md-1 rounded shadow tile" id="sesa"></div>
+            <div class="col-lg-5 offset-md-1 mx-auto rounded shadow tile" id="sesa"></div>
 
           </div>
 
-          <div class="row" style="margin-top: 8rem; margin-bottom: 6rem;">
+          <div class="row mt-5" data-aos="fade-up" data-aos-duration="800" style="margin-bottom: 6rem;">
             <div class="col-lg-4">
               <h3 style="margin: 0px;">UI/UX DESIGN</h3>
               <h2 style="font-weight: 600">uOttaHack</h2>
@@ -160,9 +165,7 @@
               </p>
             </div>
 
-            <div class="col-lg-5 offset-md-1 rounded shadow">
-              <p>yoyo</p>
-            </div>
+            <div class="col-lg-5 offset-md-1 mx-auto rounded shadow tile"></div>
           </div>
 
         </div>
@@ -173,7 +176,14 @@
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.slim.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Animate on Scroll -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
   <script>
+    // Initialize AOS 
+    AOS.init();
+
     // Autoplay video
     document.getElementById('videosrc').play();
     document.getElementById('pic').play();

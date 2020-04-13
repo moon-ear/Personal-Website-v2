@@ -38,9 +38,9 @@ body {
         padding-top: 40px !important;
         padding-bottom: 10px !important;
         padding-left: 0px !important;
-        -webkit-box-shadow: 0px 8px 7px -2px rgba(0, 0, 0, 0.1);
-        -moz-box-shadow: 0px 8px 7px -2px rgba(0, 0, 0, 0.1);
-        box-shadow: 0px 8px 7px -2px rgba(0, 0, 0, 0.1);
+        -webkit-box-shadow: 0px 8px 7px -2px rgba(0, 0, 0, 0.008);
+        -moz-box-shadow: 0px 8px 7px -2px rgba(0, 0, 0, 0.08);
+        box-shadow: 0px 8px 7px -2px rgba(0, 0, 0, 0.08);
     }
 
     #mynav div {
@@ -65,6 +65,14 @@ body {
 
     #bio {
         padding-right: 0px !important;
+    }
+
+    #work-tiles .col-lg-4 {
+        padding: 0px 80px;
+    }
+
+    #work-tiles .col-lg-5 {
+        margin-top: 30px;
     }
 }
 
@@ -121,6 +129,7 @@ body {
 
 #blurb {
     animation-delay: 0.3s;
+    text-align: justify;
 }
 
 #picDiv,
@@ -155,6 +164,11 @@ body {
 
 #work-tiles {
     animation-delay: 1.2s;
+}
+
+#work-tiles .col-lg-5 {
+    max-width: 420px;
+    min-height: 350px;
 }
 
 .rounded {
