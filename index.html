@@ -27,59 +27,32 @@
 
 <body>
 
-  <!-- Navigation -->
-  <!-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
-    <div class="container">
-      <a class="navbar-brand" href="#">Start Bootstrap</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home
-              <span class="sr-only">(current)</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Services</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav> -->
-
   <!-- Page Content -->
   <div class="container-fluid">
     <div class="row">
 
+      <!-- Navigation -->
       <div class="col-md-2 animated fadeIn" id="mynav">
-        <div>
-          <ul class="list-unstyled text-left">
-            <a href="">
-              <li>Work</li>
-            </a>
-            <a href="">
-              <li>About Me</li>
-            </a>
-            <a href="">
-              <li>Contact</li>
-            </a>
-          </ul>
-        </div>
+        <ul class="text-left">
+          <a href="">
+            <li>Work</li>
+          </a>
+          <a href="">
+            <li>About Me</li>
+          </a>
+          <a href="">
+            <li>Contact</li>
+          </a>
+        </ul>
       </div>
 
+      <!-- Main Content -->
       <div class="col-md-9" id="allcontent">
 
         <div class="container">
           <div class="row">
 
+            <!-- Blurb -->
             <div class="col-lg-6" id="bio">
               <h1 class="animated fadeIn" id="ImMunir">Hey, I'm Munir</h1>
               <h2 class="animated fadeIn mt-1" id="occupation">Software Engineer & Designer</h2>
@@ -91,7 +64,8 @@
                 Etiam sed arcu ipsum.
               </p>
 
-              <div class="row ml-1 mt-2">
+              <!-- Contact Buttons -->
+              <div class="row ml-1 mt-2 animated fadeIn" id="contact-wrapper">
                 <div class="svg-wrapper rounded col-sm-2">
                   <a href="">
                     <svg version="1.1" class="contact-logo" xmlns="http://www.w3.org/2000/svg"
@@ -146,6 +120,7 @@
 
             </div>
 
+            <!-- Video -->
             <div class="col-lg-6 animated fadeIn text-center my-auto" id="picDiv">
               <video width="400" class="rounded" autoplay defaultMuted muted loop playsinline id="pic">
                 <source src="./img/try2comp.mp4" type="video/mp4" id="videosrc">
@@ -156,6 +131,7 @@
           </div>
         </div>
 
+        <!-- Work Showcase -->
         <div class="container mt-5 animated fadeInUp" id="work-tiles">
 
           <div class="row">

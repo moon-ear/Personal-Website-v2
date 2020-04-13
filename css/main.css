@@ -33,12 +33,23 @@ body {
 
 @media only screen and (max-width: 768px) {
     #mynav {
-        /* background-color: rgb(199, 75, 199) !important; */
-        margin-top: 1rem !important;
+        background-color: #F3F3F0 !important;
+        margin-top: 0px !important;
+        position: fixed !important;
+        padding-top: 40px !important;
+        padding-bottom: 10px !important;
+        -webkit-box-shadow: 0px 8px 7px -2px rgba(0, 0, 0, 0.13);
+        -moz-box-shadow: 0px 8px 7px -2px rgba(0, 0, 0, 0.13);
+        box-shadow: 0px 8px 7px -2px rgba(0, 0, 0, 0.13);
+    }
+
+    #picDiv {
+        margin-top: 60px !important;
     }
 
     #mynav div {
         position: static !important;
+        /* margin-top: 2px; */
     }
 
     #mynav ul {
@@ -51,7 +62,7 @@ body {
     }
 
     #allcontent {
-        margin-top: 4rem !important;
+        margin-top: 10rem !important;
         /* padding: 0px 1.9rem; */
         /* background-color: hotpink !important; */
     }
@@ -63,12 +74,13 @@ body {
 
 #mynav {
     animation-delay: 1.2s;
-    padding-top: 100px;
-    margin-top: 22vh !important;
-    padding-left: 5vw;
+    padding-top: 10vh;
+    margin-top: 200px;
+    padding-left: 20px;
     font-family: 'Merriweather', serif !important;
     font-weight: 700;
     position: relative;
+    z-index: 10;
 }
 
 #mynav div {
@@ -83,6 +95,10 @@ body {
 #mynav a:hover {
     color: #101213;
     text-decoration: underline !important;
+}
+
+#mynav ul {
+    list-style-type: none;
 }
 
 #mynav li {
@@ -105,7 +121,8 @@ body {
     animation-delay: 0.3s;
 }
 
-#picDiv {
+#picDiv,
+#contact-wrapper {
     animation-delay: 0.5s;
 }
 
@@ -165,6 +182,10 @@ body {
 
 .test2 {
     background-color: green;
+}
+
+.test3 {
+    background-color: orange;
 }
 
 .mt-1 {
