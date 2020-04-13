@@ -101,7 +101,7 @@ body {
     z-index: 10;
 }
 
-#mynav div {
+#mynav ul {
     position: fixed;
 }
 
