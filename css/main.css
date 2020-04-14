@@ -43,9 +43,8 @@ body {
         box-shadow: 0px 8px 7px -2px rgba(0, 0, 0, 0.08);
     }
 
-    #mynav div {
+    #mynav ul {
         position: static !important;
-        /* margin-top: 2px; */
     }
 
     #mynav ul {
@@ -73,6 +72,10 @@ body {
 
     #work-tiles .col-lg-5 {
         margin-top: 30px;
+    }
+
+    #footer {
+        padding-right: 0px !important;
     }
 }
 
@@ -136,6 +139,10 @@ body {
     animation-delay: 0.2s;
 }
 
+#bio hr {
+    animation-delay: 0.2s
+}
+
 #blurb {
     animation-delay: 0.3s;
     text-align: justify;
@@ -181,6 +188,14 @@ body {
     min-height: 350px;
 }
 
+.work-title-category {
+    margin: 0px;
+}
+
+.work-tile-title {
+    font-weight: 600;
+}
+
 .rounded {
     border-radius: 5% !important;
 }
@@ -193,6 +208,15 @@ body {
 
 #sesa {
     background-image: url(https://i.imgur.com/APGz8jq.jpg);
+}
+
+#footer {
+    margin-bottom: 150px;
+    padding-right: 120px;
+}
+
+#footer h2 {
+    font-weight: 600;
 }
 
 /* Article Page Navigation */
