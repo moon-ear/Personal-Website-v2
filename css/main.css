@@ -101,6 +101,10 @@ html.is-animating .transition-fade {
     }
 }
 
+#allContentContainer {
+    max-width: 1400px;
+}
+
 #mynav {
     animation-delay: 1.2s;
     padding-top: 10vh;
@@ -171,6 +175,8 @@ html.is-animating .transition-fade {
     transition: 0.5s;
     min-width: 45px;
     max-width: 45px;
+    min-height: 45px;
+    max-height: 45px;
     padding: 6px;
 }
 
