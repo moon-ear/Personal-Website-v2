@@ -31,7 +31,7 @@
 <body>
 
   <!-- Page Content -->
-  <div class="container-fluid">
+  <div class="container" style="max-width: 1400px;">
     <div class="row">
 
       <!-- Navigation -->
@@ -258,14 +258,17 @@
     AOS.init({
       once: true
     });
+  </script>
 
-    // Initialize swup
-    import Swup from 'swup';
-    const swup = new Swup(); // only this line when included with script tag
-
+  <script>
     // Autoplay video
     document.getElementById('videosrc').play();
     document.getElementById('pic').play();
+  </script>
+
+  <script>
+    import Swup from 'swup';
+    const swup = new Swup(); // only this line when included with script tag
   </script>
 
 </body>
