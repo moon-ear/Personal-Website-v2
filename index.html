@@ -26,6 +26,11 @@
   <!-- Custom CSS -->
   <link href="css/main.css" rel="stylesheet">
 
+  <!-- Swup -->
+  <script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script> 
+  <script defer src="swup.js"></script> 
+  <link rel="stylesheet" href="css/swup.css">
+
 </head>
 
 <body>
@@ -40,7 +45,7 @@
           <a href="https://www.thesaurus.com/">
             <li>Work</li>
           </a>
-          <a href="">
+          <a href="/about.html">
             <li>About Me</li>
           </a>
           <a href="">
@@ -53,7 +58,7 @@
       <div class="col-lg-10" id="allcontent">
 
         <!-- Name and Video -->
-        <div class="container transition-fade" id="swup">
+        <div class="transition-fade container transition-fade" id="swup">
           <div class="row">
 
             <!-- Name and Blurb -->
@@ -249,9 +254,6 @@
   <!-- Animate on Scroll -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-  <!-- Swup -->
-  <script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>  
-
 
   <script>
     // Initialize AOS 
@@ -264,11 +266,6 @@
     // Autoplay video
     document.getElementById('videosrc').play();
     document.getElementById('pic').play();
-  </script>
-
-  <script>
-    import Swup from 'swup';
-    const swup = new Swup(); // only this line when included with script tag
   </script>
 
 </body>
