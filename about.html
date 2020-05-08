@@ -27,10 +27,9 @@
   <link href="css/main.css" rel="stylesheet">
 
   <!-- Swup -->
-  <script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script> 
-  <script defer src="swup.js"></script> 
+  <script defer src="node_modules/swup/dist/swup.min.js"></script>
+  <script defer src="swup.js"></script>
   <link rel="stylesheet" href="css/swup.css">
-
 </head>
 
 <body>
@@ -40,12 +39,12 @@
     <div class="row">
 
       <!-- Navigation -->
-      <div class="col-lg-2 animated fadeIn" id="mynav">
+      <div class="col-lg-2 animated" id="mynav">
         <ul class="text-left">
-          <a href="https://www.thesaurus.com/">
+          <a href="/index.html">
             <li>Work</li>
           </a>
-          <a href="">
+          <a href="/about.html">
             <li>About Me</li>
           </a>
           <a href="">
@@ -55,9 +54,16 @@
       </div>
 
       <!-- Main Content -->
-      <div class="col-lg-10" id="allcontent">
+      <main class="transition-fade col-lg-10 mainContent" id="swup">
 
-        <h1>hahahahah</h1>
+        <!-- Name and Video -->
+        <div class="container">
+          <div class="row">
+
+            <h1>yoyo</h1>
+
+          </div>
+        </div>
 
         <!-- Footer -->
         <div class="container mt-3 text-left" data-aos="fade-up" data-aos-duration="600" id="footer">
@@ -124,7 +130,7 @@
           </div>
         </div>
 
-      </div>
+      </main>
     </div>
   </div>
 
@@ -134,6 +140,7 @@
 
   <!-- Animate on Scroll -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
 
   <script>
     // Initialize AOS 
@@ -146,6 +153,31 @@
     // Autoplay video
     document.getElementById('videosrc').play();
     document.getElementById('pic').play();
+  </script>
+
+  <script>
+    // delegate all clicks on "a" tag (links)
+    $(document).on("click", "a", function () {
+
+      // get the href attribute
+      var newUrl = $(this).attr("href");
+
+      // veryfy if the new url exists or is a hash
+      if (!newUrl || newUrl[0] === "#") {
+        // set that hash
+        location.hash = newUrl;
+        return;
+      }
+
+      // now, fadeout the html (whole page)
+      $("html").fadeOut(function () {
+        // when the animation is complete, set the new location
+        location = newUrl;
+      });
+
+      // prevent the default browser behavior.
+      return false;
+    });
   </script>
 
 </body>

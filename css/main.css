@@ -20,15 +20,6 @@ body {
     background-color: #F3F3F0;
 }
 
-.transition-fade {
-    transition: 0.4s;
-    opacity: 1;
-}
-
-html.is-animating .transition-fade {
-    opacity: 0;
-}
-
 /* Main Page Screen Size Changes, LG */
 
 @media only screen and (max-width: 991px) {
@@ -65,7 +56,7 @@ html.is-animating .transition-fade {
         padding: 0px 4vw !important;
     }
 
-    #allcontent {
+    .mainContent {
         margin-top: 10rem !important;
         /* padding: 0px 1.9rem; */
         /* background-color: hotpink !important; */
@@ -140,7 +131,7 @@ html.is-animating .transition-fade {
     padding: 0.2rem 0px;
 }
 
-#allcontent {
+.mainContent {
     margin-top: 14rem;
 }
 
@@ -198,11 +189,6 @@ html.is-animating .transition-fade {
     animation-delay: 1.2s;
 }
 
-#work-tiles .col-lg-5 {
-    /* max-width: 420px; */
-    min-height: 350px;
-}
-
 .work-title-category {
     margin: 0px;
 }
@@ -215,14 +201,30 @@ html.is-animating .transition-fade {
     border-radius: 5% !important;
 }
 
-.tile {
-    height: 300px;
+.tileWrap:hover {
+    cursor: pointer;
+}
+
+.tileWrap:hover .zoomHover {
+    transform: scale(1.03);
+}
+
+.zoomHover {
+    transition: transform .2s;
+}
+
+.tilePic {
+    height: 400px;
     background-size: cover;
     background-position: center;
 }
 
 #sesa {
-    background-image: url(https://i.imgur.com/APGz8jq.jpg);
+    background-image: url('../img/qlik.jpg');
+}
+
+#uottahack {
+    background-image: url('../img/uottahack.jpg')
 }
 
 #footer {
