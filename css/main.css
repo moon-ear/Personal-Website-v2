@@ -29,6 +29,7 @@ body {
 
     #picDiv {
         margin-top: 60px !important;
+        text-align: center;
     }
 
     #mynav {
@@ -155,6 +156,10 @@ body {
 #picDiv,
 #contact-wrapper {
     animation-delay: 0.5s;
+}
+
+#picDiv {
+    text-align: right;
 }
 
 .contact-logo {
