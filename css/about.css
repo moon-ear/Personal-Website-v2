@@ -1,0 +1,11 @@
+/* Main Page Screen Size Changes, LG */
+
+@media only screen and (max-width: 1200px) {
+    #aboutMeProfilePic {
+        text-align: center !important;
+    }
+}
+
+#photographyContainer {
+    margin-top: 9rem;
+}
