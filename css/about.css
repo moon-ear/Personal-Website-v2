@@ -5,7 +5,23 @@
         text-align: center !important;
     }
 }
+/* Main Page Screen Size Changes, LG */
+
+@media only screen and (max-width: 1200px) {
+    #aboutMeProfilePic {
+        text-align: center !important;
+    }
+}
 
 #photographyContainer {
     margin-top: 9rem;
+}
+
+#photographyRow > div {
+    padding: 0 4px !important;
+}
+
+#photographyRow img {
+  margin-top: 8px;
+  vertical-align: middle;
 }
