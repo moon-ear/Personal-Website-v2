@@ -277,9 +277,10 @@ body {
 }
 
 p {
-    line-height: 1.8em !important;
+    line-height: 2em !important;
     font-weight: 300;
     color: #565656;
+    font-size: 1.1rem;
     /* font-family: 'Montserrat', serif; */
 }
 
