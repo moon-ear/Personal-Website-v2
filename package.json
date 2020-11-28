@@ -30,7 +30,7 @@
     },
     "dependencies": {
         "bootstrap": "4.3.1",
-        "jquery": "3.4.1",
+        "jquery": "3.5.0",
         "medium-zoom": "^1.0.5",
         "swup": "^2.0.9"
     },
